@@ -1,0 +1,9 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactement 3 colonnes */
+  gap: 50px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 0 100px 50px 100px;
+}

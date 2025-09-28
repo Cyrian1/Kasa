@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none; /* important : pas souligné par défaut */
+}
+
+.active-link {
+  text-decoration: underline;
+}
