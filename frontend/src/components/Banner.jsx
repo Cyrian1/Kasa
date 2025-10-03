@@ -1,11 +1,11 @@
 import bannerImage from "../assets/Home_banner.png";
 import "./Banner.css";
 
-export default function Banner() {
+export default function Banner({ image, text }) {
   return (
     <div className="banner">
-      <img src={bannerImage} alt="Paysage" className="banner-img" />
-      <h1 className="banner-text">Chez vous, partout et ailleurs</h1>
+      <img src={image} alt="Bannière" className="banner-img" />
+      {text && <h1 className="banner-text">{text}</h1>}
     </div>
   );
 }

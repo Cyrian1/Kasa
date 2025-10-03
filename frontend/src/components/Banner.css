@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.6; /* 60% */
+  opacity: 0.6;
 }
 
 .banner-text {
@@ -33,5 +33,27 @@
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  z-index: 1; /* pour passer au-dessus du overlay */
+  z-index: 1;
+}
+
+/* ✅ Responsive Mobile */
+@media (max-width: 600px) {
+  .banner {
+    margin: 0 20px 20px 20px;
+    border-radius: 10px;
+  }
+
+  .banner-img {
+    height: 110px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+    line-height: 1.4;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); /* plus de centrage horizontal */
+    text-align: left; /* alignement à gauche */
+    width: calc(100% - 40px); /* éviter de coller aux bords */
+  }
 }

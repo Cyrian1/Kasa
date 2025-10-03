@@ -1,0 +1,106 @@
+.property-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 100px;
+}
+
+.property-left {
+  flex: 1;
+}
+
+.property-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.dropdowns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 30px 100px;
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 600px) {
+  /* Carousel */
+  .carousel {
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .carousel-img {
+    height: 255px;
+  }
+
+  /* Contenu principal */
+  .property-content {
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .property-left h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .property-left .location {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .tags {
+    gap: 8px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+
+  /* Colonne droite devient en ligne (rating + host) */
+  .property-right {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rating {
+    order: 1;
+    font-size: 14px;
+  }
+
+  .host {
+    order: 2;
+  }
+
+  .host-name {
+    font-size: 14px;
+  }
+
+  .host-picture {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Dropdowns en pile */
+  .dropdowns {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    gap: 15px;
+  }
+
+  .dropdown-header {
+    font-size: 16px;
+    padding: 12px 15px;
+    border-radius: 8px;
+  }
+
+  .dropdown-content {
+    font-size: 14px;
+    padding: 15px;
+  }
+}

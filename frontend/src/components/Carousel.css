@@ -1,0 +1,69 @@
+.carousel {
+  position: relative;
+  margin: 20px 100px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  display: block;
+}
+
+/* flèches */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+/* compteur */
+.counter {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* bullets */
+.bullets {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.bullet.active {
+  opacity: 1;
+  background: #ff6060;
+}

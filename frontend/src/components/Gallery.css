@@ -1,9 +1,19 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* exactement 3 colonnes */
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   background: #f7f7f7;
   border-radius: 25px;
   padding: 50px;
   margin: 0 100px 50px 100px;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 colonne */
+    gap: 20px;
+    padding: 0;          /* pas de padding interne */
+    margin: 20px;        /* juste un petit margin extérieur */
+    background: none;    /* supprime le fond gris */
+  }
 }

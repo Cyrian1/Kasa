@@ -1,0 +1,18 @@
+.about-dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 200px 50px 200px; /* plus de marge que la bannière */
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .banner {
+    margin: 0 20px 20px 20px;  /* bannière large */
+  }
+
+  .about-dropdowns {
+    margin: 0 20px 20px 20px;  /* sur mobile ils reprennent la même largeur */
+    gap: 20px;
+  }
+}

@@ -20,3 +20,18 @@ nav a {
 .active-link {
   text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  nav a {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+}
