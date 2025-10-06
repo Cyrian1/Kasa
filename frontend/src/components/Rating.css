@@ -5,10 +5,10 @@
 
 .star {
   font-size: 24px;
-  color: #e3e3e3; /* gris clair pour les étoiles vides */
+  color: #e3e3e3; 
   font-weight: 700;
 }
 
 .star.filled {
-  color: #ff6060; /* rouge pour les étoiles pleines */
+  color: #ff6060;
 }

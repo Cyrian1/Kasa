@@ -12,7 +12,6 @@ export default function Dropdown({ title, content }) {
         aria-expanded={isOpen}
       >
         <span>{title}</span>
-        {/* Fermé = flèche vers le haut, Ouvert = flèche vers le bas */}
         <span className={`chevron ${isOpen ? "down" : "up"}`} />
       </button>
 

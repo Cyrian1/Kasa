@@ -14,7 +14,7 @@ nav a {
   font-size: 18px;
   font-weight: 500;
   color: #000;
-  text-decoration: none; /* important : pas souligné par défaut */
+  text-decoration: none;
 }
 
 .active-link {

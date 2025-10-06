@@ -30,10 +30,10 @@ export default function Carousel({ pictures }) {
       {/* flèches visibles seulement si +1 image */}
       {total > 1 && (
         <>
-          <button className="arrow left" onClick={prevSlide}>
+          <button className="arrow left" onClick={prevSlide} aria-label="Précédent">
             ‹
           </button>
-          <button className="arrow right" onClick={nextSlide}>
+          <button className="arrow right" onClick={nextSlide} aria-label="Suivant">
             ›
           </button>
         </>
