@@ -1,14 +1,11 @@
-import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Dropdown from "../components/Dropdown";
-import Footer from "../components/Footer";
 import aboutBanner from "../assets/About_banner.png";
 import "../components/About.css";
 
 export default function About() {
   return (
     <>
-      <Header />
       <Banner image={aboutBanner} text="" /> {/* bannière sans texte */}
       <div className="about-dropdowns">
         <Dropdown
@@ -28,7 +25,6 @@ export default function About() {
           content="La sécurité est la priorité de Kasa. Chaque logement répond aux critères de sécurité établis par nos services. Les hôtes et les voyageurs sont également évalués pour garantir la confiance."
         />
       </div>
-      <Footer />
     </>
   );
 }

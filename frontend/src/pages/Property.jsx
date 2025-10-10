@@ -1,7 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
 import PropertyInfo from "../components/PropertyInfo";
 import Host from "../components/Host";
@@ -33,7 +31,6 @@ export default function Property() {
 
   return (
     <>
-      <Header />
       <Carousel pictures={property.pictures} />
       <div className="property-content">
         <div className="property-left">
@@ -61,7 +58,6 @@ export default function Property() {
           }
         />
       </div>
-      <Footer />
     </>
   );
 }

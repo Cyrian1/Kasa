@@ -1,0 +1,9 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* force la page à remplir la hauteur totale de la fenêtre */
+}
+
+.layout-main {
+  flex: 1; /* prend tout l’espace restant entre header et footer */
+}

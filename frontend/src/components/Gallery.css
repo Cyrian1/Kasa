@@ -8,12 +8,21 @@
   margin: 0 100px 50px 100px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .gallery {
     grid-template-columns: 1fr; /* 1 colonne */
     gap: 20px;
     padding: 0;          /* pas de padding interne */
     margin: 20px;        /* juste un petit margin extérieur */
     background: none;    /* supprime le fond gris */
+  }
+}
+
+/* Tablette */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
   }
 }

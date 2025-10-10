@@ -26,7 +26,7 @@
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .card-img {
     height: 200px;
   }
